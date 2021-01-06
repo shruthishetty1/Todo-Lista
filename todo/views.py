@@ -26,7 +26,7 @@ def signupuser(request):
                 return render(request, 'todo/signupuser.html',{'form':UserCreationForm(),'error':'This username already exists.Please choose other username'})
             
         else:
-             return render(request, 'todo/signupuser.html',{'form':UserCreationForm(),'error':'passwords did not match'}
+             return render(request, 'todo/signupuser.html',{'form':UserCreationForm(),'error':'passwords did not match'})
                            
 def loginuser(request):
     if request.method =='GET':
